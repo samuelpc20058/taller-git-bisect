@@ -2,7 +2,7 @@ import numpy as np
 
 def calcular_ancho_banda(frecuencias, intensidad):
     """Calcula la frecuencia central de resonancia mediante un promedio ponderado."""
-    f_res = np.sum(frecuencias * intensidad) / np.sum(intensidad)
+    f_res = np.sum(frecuencias * intensidad) / np.sum(intensidad) ** 2
     return f_res
 
 def test_calculo_resonancia():
